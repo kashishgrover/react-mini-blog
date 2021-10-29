@@ -9,7 +9,7 @@ const useFetch = (url) => {
         fetch(url)
             .then( res => {
                 if(!res.ok) {
-                    throw Error('could notfetch data for that resource');
+                    throw Error('could not fetch data for that resource');
                 }
                 return res.json();
             })
